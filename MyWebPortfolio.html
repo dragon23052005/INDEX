@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coursera CSS Project</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #333;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: space-around;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+
+    /* Main Content */
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .sidebar, .content {
+      border: 2px solid #ccc;
+      padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to Main Content</a>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <div class="sidebar">
+      <h2>Navigation</h2>
+      <p>Use the menu above to explore.</p>
+    </div>
+    <div class="content">
+      <h1>Review of Coursera CSS Course</h1>
+      <p>This course provides a great introduction to modern CSS, including Flexbox, Grid, and accessibility practices. I learned how to structure pages using semantic HTML and how to style them responsively using modern CSS techniques.</p>
+      <h3>Pros:</h3>
+      <ul>
+        <li>Clear explanations and practical examples</li>
+        <li>Hands-on projects to reinforce learning</li>
+        <li>Focus on accessibility and validation</li>
+      </ul>
+      <h3>Cons:</h3>
+      <ul>
+        <li>Could use more advanced topics like CSS animations or variables</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CSS Project - Coursera</p>
+  </footer>
+</body>
+</html>
